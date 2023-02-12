@@ -78,6 +78,7 @@ ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg
 vendor.display.idle_time=0
 vendor.display.idle_time_inactive=0
 debug.sf.enable_transaction_tracing=false
+vendor.gralloc.enable_fb_ubwc=1
 
 # Display (phase offsets)
 debug.sf.use_phase_offsets_as_durations=1
