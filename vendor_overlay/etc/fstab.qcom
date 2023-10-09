@@ -14,7 +14,7 @@ odm                                                     /odm                   e
 odm                                                     /odm                   erofs   ro                                                   wait,logical,first_stage_mount
 my_product                                              /mnt/vendor/my_product ext4    ro,barrier=1,discard                                 wait,logical,first_stage_mount
 my_product                                              /mnt/vendor/my_product erofs   ro                                                   wait,logical,first_stage_mount
-/dev/block/by-name/metadata                             /metadata              ext4    noatime,nosuid,nodev,discard                         wait,formattable,first_stage_mount
+/dev/block/by-name/metadata                             /metadata              ext4    noatime,nosuid,nodev,discard,data=journal,commit=1   wait,formattable,first_stage_mount
 /dev/block/bootdevice/by-name/boot                      /boot                  emmc    defaults                                             recoveryonly
 /dev/block/bootdevice/by-name/recovery                  /recovery              emmc    defaults                                             recoveryonly
 /dev/block/bootdevice/by-name/cache                     /cache                 ext4    nosuid,noatime,nodev,barrier=1                       wait,check
